@@ -1,0 +1,96 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.profile-card {
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: auto;
+}
+
+.profile-card h2 {
+    font-weight: bold;
+}
+
+.profile-card p {
+    color: gray;
+}
+
+.button {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.friend {
+    background-color: green;
+}
+
+.teacher {
+    background-color: blue;
+}
+
+.student {
+    background-color: purple;
+}
+
+.button:hover {
+    filter: brightness(0.8);
+}
+
+.button:focus-visible {
+    outline: 3px solid black;
+    outline-offset: 3px;
+}
+
+.footer {
+    text-align: center;
+    color: lightgray;
+    padding: 25px;
+}
+
+@media (min-width: 600px) {
+    .profiles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
